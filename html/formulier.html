@@ -9,14 +9,6 @@
   </head>
 
   <body>
-    <nav id="primaire-nav">
-      <ul class="tab">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="tips.html">Tips</a></li>
-        <li><a href="nieuws.html">Nieuws</a></li>
-        <li><a href="formulier.html">Formulier</a></li>
-      </ul>
-    </nav>
     <h1>Aanmelden Grof Vuil - Ons Dorp</h1>
     <form action="" method="post">
       <table style="width: 400px; border-spacing: 0px; padding: 0px">
@@ -42,6 +34,76 @@
           <td style="text-align: right">E-mailadres:&nbsp;</td>
           <td>
             <input type="email" name="email" required />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">Betaalmethode&nbsp;</td>
+          <td>
+            <input
+              type="radio"
+              name="methode"
+              id="rembourszending"
+              checked
+            />Rembourszending
+            <input
+              type="radio"
+              name="methode"
+              id="vooruitbetaling"
+            />Vooruitbetaling
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">Soort&nbsp;</td>
+          <td>
+            <input type="checkbox" name="soort" id="apparaten" />Apparaten
+            <input type="checkbox" name="soort" id="tuinafval" />Tuinafval
+            <input type="checkbox" name="soort" id="grof afval" />Grof Afval
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">Apparaat&nbsp;</td>
+          <td>
+            <select name="apparaat">
+              <option>Kies elektrische apparaten</option>
+              <option>Afzuigkap</option>
+              <option>Computerapparaat</option>
+              <option>Koelkast</option>
+              <option>Koffiezetapparaat</option>
+              <option>Radio</option>
+              <option>Televisie</option>
+              <option>Vaatwasser</option>
+              <option>Wasmachine</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">Tuinafval&nbsp;</td>
+          <td>
+            <select name="tuinafval">
+              <option>Kies tuinafval</option>
+              <option>Groenteafval</option>
+              <option>Stammetjes en stronken dikker dan 10cm.</option>
+              <option>Stammetjes en stronken dunner dan 10cm.</option>
+              <option>Tuinafval</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">Grof Tuinafval&nbsp;</td>
+          <td>
+            <select name="grof tuinafval">
+              <option>Kies grof afval</option>
+              <option>Bank</option>
+              <option>Bureau - hout</option>
+              <option>Bureau - staal</option>
+              <option>Kachel</option>
+              <option>Laminaat</option>
+              <option>Trap/ladder - hout</option>
+              <option>Vloerbekleding</option>
+              <option>Wandbekleding</option>
+              <option>Zonwering - hout</option>
+              <option>Zonwering - metaal</option>
+            </select>
           </td>
         </tr>
         <tr>
